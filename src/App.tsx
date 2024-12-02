@@ -1,9 +1,9 @@
 import "./assets/styles/global.css"
+import Layout from "./pages/Layout/Layout"
 
 function App() {
   return (
-    <>
-    </>
+    <Layout />  
   )
 }
 
