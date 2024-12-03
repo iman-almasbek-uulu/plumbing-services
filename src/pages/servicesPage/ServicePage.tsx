@@ -1,4 +1,3 @@
-import scss from './ServicePage.module.scss';
 
 const ServicePage = () => {
     return (
