@@ -1,3 +1,65 @@
 #Header {
-    width: 100%;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: white;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .Logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .logoImg {
+        width: 80px;
+        padding: 5px;
+      }
+
+      select {
+        padding: 5px 10px;
+        border: none;
+        background-color: white;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      a {
+        font-size: 20px;
+        color: #000;
+        text-decoration: none;
+        position: relative;
+        padding: 5px;
+
+        &:hover {
+          color: #007bff;
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 2px;
+          background-color: #007bff;
+          transition: width 0.3s ease-in-out;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
+
+//*****************//
+
+
