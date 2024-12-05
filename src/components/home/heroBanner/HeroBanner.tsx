@@ -8,5 +8,4 @@ const HeroBanner = () => {
         </section>
     );
 };
-
 export default HeroBanner;
