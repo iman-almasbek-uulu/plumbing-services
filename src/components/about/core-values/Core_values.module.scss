@@ -1,19 +1,15 @@
-#Hero{
+#Core_values{
     width: 100%;
     padding: 50px 0;
 
-    .hero {
-        width: 100%;
-        padding: 30px;
+    .core_values {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: space-between;
-        align-items: center;
+        align-items: start;
         gap: 20px;
         border-radius: 30px;
-        background-color: #0045FF;
         .left {
-            height: 664px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -21,40 +17,47 @@
                 font-size: 60px;
                 font-weight: 700;
                 line-height: 71.1px;
-            }
-            h3 {
-                font-size: 48px;
-                font-weight: 400;
-                line-height: 56.88px;
+                color: #0045FF;
                 margin-bottom: 30px;
             }
             p {
-                font-size: 20px;
-                line-height: 23.7px;
+                color: black;
+                font-size: 16px;
+                line-height: 19.36px;
+                margin-bottom: 30px;
             }
         }
         img {
-            width: 590px;
-            height: 664px;
+            height: 450px;
             border-radius: 30px;
             object-fit: cover;
+        }
+        ul {
+            list-style: disc;
+            color: black;
+            font-size: 16px;
+            line-height: 19.36px;
+            margin-left: 25px;
+            margin-top: -30px;
+            li {
+                margin-bottom: 5px;
+            }
         }
     }
 }
 
 @media (max-width: 1034px) {
-    #Hero {
-        .hero {
+    #Core_values {
+        .core_values {
             .left {
-                height: 600px;
                 h2 {
                     font-size: 55px;
                 }
-                h3 {
-                    font-size: 44px;
-                }
                 p {
-                    font-size: 19px;
+                    font-size: 16px;
+                }
+                ul {
+                    font-size: 16px;
                 }
             }
             img {
@@ -65,10 +68,9 @@
 }
 
 @media (max-width: 834px) {
-    #Hero {
-        .hero {
+    #Core_values {
+        .core_values {
             .left {
-                height: 500px;
                 h2 {
                     font-size: 50px;
                     line-height: 51.1px;
@@ -92,8 +94,8 @@
 }
 
 @media (max-width: 784px) {
-    #Hero {
-        .hero {
+    #Core_values {
+        .core_values {
             display: flex;
             flex-direction: column;
             .left {
@@ -123,9 +125,9 @@
 }
 
 @media (max-width: 484px) {
-    #Hero {
+    #Core_values {
         padding: 30px 0;
-        .hero {
+        .core_values {
             display: flex;
             flex-direction: column;
             padding: 20px 15px;
