@@ -1,0 +1,73 @@
+#Features {
+    width: 100%;
+    padding: 50px 0;
+    
+    .features {
+      h2 {
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 71.1px;
+        color: #0045FF;
+        margin-bottom: 30px;
+      }
+      
+      .text {
+        font-family: Inter;
+        color: black;
+        font-size: 16px;
+        margin-bottom: 30px;
+        font-weight: 400;
+        line-height: 19.36px;
+      }
+      
+      .list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        gap: 10px;
+        
+        .item {
+          position: relative;
+          background-color: #0044ff;
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+          height: 450px;
+          border-radius: 30px;
+          padding: 50px 20px 20px;
+          &:nth-child(4),
+          &:nth-child(5)  {
+            grid-column: span 1 / span 1;
+          }
+          
+          .num {
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            z-index: 1;
+            font-family: Rubik;
+            font-size: 128px;
+            font-weight: 900;
+            line-height: 151.68px;
+            color: #d5dfff6a; 
+          }
+
+          h4 {
+            font-family: Rubik;
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 56.88px;
+            margin-bottom: 30px;
+          }
+          
+          .descr {
+            font-family: Rubik;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23.7px;
+          }
+
+        }
+      }
+    }
+  }

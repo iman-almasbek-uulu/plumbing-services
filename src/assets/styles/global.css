@@ -10,7 +10,9 @@
 html, body {
   height: 100%;
   width: 100%;
-  font-size: 100%;
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
   font-family: sans-serif;
 }
 
@@ -49,7 +51,8 @@ ul, ol {
 
 .container {
   width: 100%;  
-  max-width: 1300px;
+  max-width: 1330px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
