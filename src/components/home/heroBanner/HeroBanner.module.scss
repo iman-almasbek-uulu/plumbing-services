@@ -1,0 +1,152 @@
+#HeroBanner {
+  width: 100%;
+
+  .Hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 9pc;
+
+    .banner {
+      display: flex;
+      flex-direction: column;
+      width: 640px;
+      height: 420px;
+
+      h1 {
+        font-family: Rubik;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 71.1px;
+        text-align: left;
+        padding: 5px;
+        color: rgb(58, 58, 58);
+      }
+
+      span {
+        color: rgba(0, 69, 255, 1);
+      }
+
+      p {
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24.2px;
+        text-align: left;
+        padding-bottom: 20px;
+        color: black;
+      }
+    }
+  }
+}
+
+// Адаптация 1020px 
+@media (max-width: 1020px) {
+  #HeroBanner .Hero .banner {
+    width: 520px;
+    height: auto;
+
+    h1 {
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 22px;
+      color: black;
+    }
+  }
+}
+// Адаптация от 850px до 660px
+@media (max-width: 850px) and (min-width: 660px) {
+  #HeroBanner .Hero {
+    gap: 25px;
+    .banner {
+      width: 480px;
+      height: auto;
+
+      h1 {
+        font-size: 46px;
+        line-height: 55px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 22px;
+        color: black;
+      }
+    }
+  }
+}
+// Адаптация от 660px до 450px
+@media (max-width: 660px) and (min-width: 450px) {
+  #HeroBanner {
+    padding: 20px;
+  }
+
+  #HeroBanner .Hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #HeroBanner .Hero .banner {
+    width: 100%;
+    height: auto;
+
+    h1 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      color: black;
+    }
+  }
+  .Button {
+    width: 100%;
+    background-color: #0045ff;
+    border-radius: 10px;
+    padding-left: 4pc;
+  }
+}
+
+// Адаптация 450px 
+@media (max-width: 450px) {
+  #HeroBanner {
+    padding: 20px;
+  }
+
+  #HeroBanner .Hero {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #HeroBanner .Hero .banner {
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+    h1 {
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: left;
+      color: black;
+    }
+  }
+  .Button {
+    width: 100%;
+    background-color: #0045ff;
+    border-radius: 10px;
+    padding-left: 3pc;
+  }
+}
