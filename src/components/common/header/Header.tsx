@@ -123,7 +123,7 @@ const Header = () => {
 
       <div
         className={`${scss.overlay} ${menuOpen ? scss.showOverlay : ""}`}
-        onClick={closeMenu} // Не закрываем меню при клике по фону
+        onClick={closeMenu}  
       ></div>
     </header>
   );
