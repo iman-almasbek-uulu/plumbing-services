@@ -61,14 +61,14 @@ const Header = () => {
               {t("О нас", "Биз жөнүндө", "About Us")}
             </NavLink>
             <NavLink
-              to="/services"
+              to="/service"
               className={({ isActive }) =>
                 `${scss.navLink} ${isActive ? scss.active : ""}`
               }
             >
               {t("Услуги", "Кызматтар", "Services")}
             </NavLink>
-            <Button>{t("Вызвать мастера", "Чакыруу", "Call Master")}</Button>
+            <Button />
           </div>
         </div>
       </div>

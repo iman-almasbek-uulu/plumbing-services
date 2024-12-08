@@ -1,9 +1,13 @@
+import Service from "../../components/services/Service";
 
 const ServicePage = () => {
+
+
+
     return (
-        <div>
-            
-        </div>
+        <>
+            <Service/>
+        </>
     );
 };
 
