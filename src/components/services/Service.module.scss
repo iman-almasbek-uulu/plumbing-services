@@ -1,0 +1,148 @@
+#Service {
+    padding: 50px 0 50px;
+    .tabs {
+        width: 100%;
+        max-width: 700px;
+        padding: 0 20px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 50px;
+        @media (max-width: 500px) {
+            gap: 15px;
+        }
+        button {
+            font-family: Rubik;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23.7px;
+            border: none;
+            background: none;
+            color: #A0A0A0;
+            cursor: pointer;
+            position: relative;
+            @media (max-width: 500px) {
+                font-size: 15px;
+                line-height: 17.78px;
+            }
+            &::before {
+                content: "";
+                width: 0%;
+                height: 3px;
+                background-color: #0045FF;
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                transition: all .3s ease;
+                
+            }
+            &:hover {
+                color: #0045FF;
+                &::before {
+                    width: 100%;
+                }
+
+            }
+        }
+        .active_tab {
+            color: #0045FF;
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+    .service {
+        width: 100%;
+        max-width: 1500px;
+        margin: 0 auto;
+        min-height: 700px;
+        background-color: #D5DFFF;
+        padding: 50px 0;
+        border-radius: 30px;
+        @media (max-width: 500px) {
+            padding: 30px 0;
+        }
+        #button {
+            width: 230px;
+            height: 56px;
+            background-color: #0045FF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 10px;
+            font-family: Rubik;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23.7px;
+            color: white !important;
+            border: none;
+        
+            &::after{
+                display: none !important;
+            }
+        
+        }
+        .block {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+            justify-content: space-between;
+            @media (max-width: 500px) {
+                flex-direction: column;
+                gap: 30px;
+                align-items: start;
+            }
+            h2 {
+                font-family: Rubik;
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 56.88px;
+                color: black;
+                @media (max-width: 500px) {
+                    font-size: 32px;
+                    line-height: 37px;
+                }
+            }
+        }
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid black;
+                padding: 0 20px 10px;
+                font-family: Rubik;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 23.7px;
+                @media (max-width: 500px) {
+                    font-size: 15px;
+                    line-height: 17.53px;
+                }
+                span {
+                    &:first-child {
+                        color: black;
+                        @media (max-width: 500px) {
+                            max-width: 400px;
+                            width: 100%;   
+                        }
+                    }
+                    &:last-child {
+                        color: #0045FF;
+                        width: 150px;
+                        text-align: left;
+                        @media (max-width: 500px) {
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

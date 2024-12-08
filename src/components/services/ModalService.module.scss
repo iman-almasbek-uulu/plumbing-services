@@ -1,0 +1,158 @@
+#Modal{
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 500px) {
+        background-color: #0045FF;
+        
+    }
+    .modal {
+        padding: 30px;
+        background-color: #0045FF;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 80vh;
+        position: relative;
+        border-radius: 60px;
+        @media (max-width: 500px) {
+            padding: 0;
+            position: static;
+            justify-content: center;
+        }
+        h2 {
+            font-family: Rubik;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 71.1px;
+            width: 80%;
+
+            @media (max-width: 834px) {
+                width: 100%;
+                margin-top: 50px;
+                font-size: 45px;
+                line-height: 52.66px;
+                
+            }
+            @media (max-width: 500px) {
+                font-size: 36px;
+                margin: 0;
+                line-height: 42.66px;
+            }
+        }
+
+        .block {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 30px;
+        }
+
+        .close {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            border-radius: 10px;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            cursor: pointer;
+            @media (max-width: 834px) {
+                width: 50px;
+                height: 50px;
+            }
+            @media (max-width: 500px) {
+                width: 45px;
+                height: 45px;
+                top: 50px;
+                right: 20px;
+            }
+        }
+
+        .left {
+            width: 100%;
+            max-width: 50%;
+            @media (max-width: 834px) {
+                display: none;
+            }
+            h3 {
+                font-family: Rubik;
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 56.88px;
+                margin-bottom: 30px;
+                @media (max-width: 984px) {
+                    font-size: 44px;
+                    line-height: 50.88px;
+                    
+                }
+                @media (max-width: 904px) {
+                    font-size: 40px;
+                    line-height: 45.88px;
+                    
+                }
+            }
+            p {
+                font-family: Rubik;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 23.7px;
+            }
+        }
+        .right {
+            width: 100%;
+            max-width: 50%;
+            @media (max-width: 834px) {
+                max-width: 100%;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 30px;
+            }
+
+            input {
+                width: 100%;
+                background: none;
+                border: 2px solid #C4C4C4;
+                border-radius: 10px;
+                padding: 20px;
+                color: white;
+            }
+            textarea {
+                width: 100%;
+                background: none;
+                border: 2px solid #C4C4C4;
+                border-radius: 10px;
+                padding: 20px;
+                color: white;
+                height: 170px;
+            }
+            button {
+                width: 100%;
+                background: white;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #0045FF;
+                padding: 20px;
+                font-family: Rubik;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 23.7px;
+
+            }
+        }
+    }
+}
