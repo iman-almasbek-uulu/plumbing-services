@@ -30,11 +30,11 @@ const HeroBanner = () => {
               )}
             </p>
             <div className={scss.Button}>
-              <Button />
+                <Button />
             </div>
           </div>
           <div>
-            <img src={imgMario} alt="" />
+            <img style={{width:"90%"}} src={imgMario} alt="" />
           </div>
         </div>
       </div>

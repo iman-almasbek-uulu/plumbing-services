@@ -4,6 +4,7 @@ import HomePage from "../pages/homePage/HomePage";
 import ServicePage from "../pages/servicesPage/ServicePage";
 import { ReactNode } from "react";
 import NotFoundPage from "../pages/notFoundPage/NotFoundPage";
+import Service from "../components/services/Service";
 
 interface RouteData {
     id: number;
@@ -32,6 +33,11 @@ const routesData: RouteData[] = [
         path: "*",
         element: <NotFoundPage />
     },
+    {
+        id:4,
+        path:"/service1",
+        element:<Service />
+    }
 ]
 
 
