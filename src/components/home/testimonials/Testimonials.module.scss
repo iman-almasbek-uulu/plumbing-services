@@ -1,3 +1,79 @@
 #Testimonials {
     width: 100%;
+
+    h2 {
+        font-family: Rubik;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 71.1px;
+        color: #0045FF;
+        @media (max-width: 1034px) {
+            font-size: 55px;
+        }
+        @media (max-width: 834px) {
+            font-size: 50px;
+            line-height: 61.1px;
+
+        }
+        @media (max-width: 634px) {
+            font-size: 40px;
+            line-height: 51.1px;
+
+        }
+        @media (max-width: 485px) {
+            font-size: 36px;
+            line-height: 41.1px;
+
+        }
+    }
+    .testimonials {
+        overflow: scroll;
+        margin-top: 50px;
+        width: 100%;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 20px;
+
+        .item {
+            width: 550px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 30px;
+            padding: 20px;
+            border: 2px solid #0045FF;
+            color: #0045FF;
+
+            @media (max-width: 1034px) {
+                width: 500px;
+            }
+            @media (max-width: 834px) {
+                width: 450px;
+            }
+            @media (max-width: 634px) {
+                width: 400px;
+            }
+            @media (max-width: 485px) {
+                width: 300px;
+                height: 300px;
+            }
+
+            .name {
+                font-family: Rubik;
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 37.92px;
+            
+            }
+            .descr {
+                font-family: Rubik;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 23.7px;
+
+            }
+        }
+    }
+
 }
