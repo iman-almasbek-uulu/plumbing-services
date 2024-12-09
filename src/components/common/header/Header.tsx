@@ -97,7 +97,7 @@ const Header = () => {
             {t("О нас", "Биз жөнүндө", "About Us")}
           </NavLink>
           <NavLink
-            to="/services"
+            to="/service"
             className={({ isActive }) =>
               `${scss.navLink} ${isActive ? scss.active : ""}`
             }
