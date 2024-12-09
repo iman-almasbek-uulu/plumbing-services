@@ -36,7 +36,7 @@ const routesData: RouteData[] = [
     {
         id:4,
         path:"/service1",
-        element:<Service />git
+        element:<Service />
     }
 ]
 
