@@ -10,10 +10,10 @@ const HomePage = () => {
         <>
             <HeroBanner />
             <About/>
-            {/* <How_work/>
-            <Services/>
+            <How_work/>
+            {/* <Services/> */}
             <Masters/>
-            <Testimonials/> */}
+            <Testimonials/>
         </>
     );
 };
