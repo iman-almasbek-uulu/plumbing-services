@@ -119,7 +119,7 @@
   }
 
   // Адаптация на 1020px //
-  @media (max-width: 1020px) {
+  @media (max-width: 1300px) {
     padding: 20px;
     .about {
       .Block {
@@ -140,15 +140,15 @@
       }
 
       .content {
-        flex-direction: column;
+        display: flex;
         gap: 20px;
 
         .box {
           display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+          justify-content: space-around;
           width: 100%;
           color: white;
+          padding: 10px;
         }
       }
     }
@@ -156,36 +156,23 @@
 
   // Адаптация на 850px //
   @media (max-width: 850px) {
-    padding: 20px;
-    .about {
-      .h1 {
-        font-size: 40px;
-      }
-
-      .content {
-        .box {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          width: 100%;
-          color: white;
-        }
-      }
-    }
-  }
-
-  // Адаптация от 650px до 450px //
-  @media (max-width: 650px) {
-    padding: 20px;
+    padding: 15px;
     .about {
       .Block {
         .aboutBlock {
+          width: auto;
+          height: auto;
+          padding: 20px;
+          flex-direction: column;
+          display: flex;
+          justify-content: space-around;
           h1 {
             font-size: 50px;
+            padding: 0;
           }
 
           p {
-            font-size: 18px;
+            font-size: 22px;
           }
         }
 
@@ -204,22 +191,153 @@
 
       .content {
         .box {
-          display: flex;
           flex-direction: column;
-          justify-content: space-between;
+          display: flex;
+          justify-content: space-around;
           width: 100%;
           color: white;
+          padding: 10px;
         }
       }
     }
   }
 
-  // Адаптация на 450px //
-  
-  @media (max-width: 450px) {
-    padding: 20px;
+ // Адаптация для экранов 500-650px
+ @media (max-width: 650px) and (min-width: 500px) {
+  padding: 20px;
+  .about {
+    .Block {
+      flex-direction: column;
+      gap: 20px;
 
+      .aboutBlock {
+        width: 100%;
+        padding: 30px;
+        border-radius: 20px;
+
+        h1 {
+          font-size: 48px;
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 24px;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+
+      .miniBlocks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .mini {
+          width: 48%;
+          padding: 20px;
+          border-radius: 20px;
+
+          h1 {
+            font-size: 40px;
+          }
+
+          h3 {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .content {
+      flex-direction: column;
+      gap: 15px;
+
+      .box {
+        width: 100%;
+        padding: 20px;
+        border-radius: 20px;
+
+        h1 {
+          font-size: 40px;
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+// Адаптация для экранов 450-500px
+@media (max-width: 500px) and (min-width: 450px) {
+  // padding: 15px;
+
+  .about {
+    .Block {
+      flex-direction: column;
+      gap: 15px;
+
+      .aboutBlock {
+        padding: 20px;
+        border-radius: 15px;
+
+        h1 {
+          font-size: 40px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .miniBlocks {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .mini {
+          padding: 15px;
+          border-radius: 15px;
+
+          h1 {
+            font-size: 36px;
+          }
+
+          h3 {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .content {
+      .box {
+        padding: 15px;
+        border-radius: 15px;
+
+        h1 {
+          font-size: 36px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+}
+
+  // Адаптация на 450px //
+
+  @media (max-width: 450px) {
+    
     .about {
+      // padding: 20px;
       .Block {
         flex-direction: column;
         .aboutBlock {
@@ -239,14 +357,14 @@
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 10px;
-          
+
           .mini {
             padding: 20px;
             height: auto;
             margin: 0;
-            
+
             &:last-child {
-              grid-column: 1 / -1; 
+              grid-column: 1 / -1;
             }
 
             h1 {
@@ -264,12 +382,14 @@
       }
 
       .content {
+        flex-direction: column;
         .box {
-          display: flex;
           flex-direction: column;
-          justify-content: space-between;
+          display: flex;
+          justify-content: space-around;
           width: 100%;
           color: white;
+          padding: 10px;
           h1 {
             font-family: Rubik;
             font-size: 32px;
@@ -292,4 +412,4 @@
       }
     }
   }
-}
+

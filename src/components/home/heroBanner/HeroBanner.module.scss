@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 9pc;
+    gap: 30px;
 
     .banner {
       display: flex;
@@ -41,7 +41,7 @@
   }
 }
 
-// Адаптация 1020px 
+// Адаптация 1020px
 @media (max-width: 1020px) {
   #HeroBanner .Hero .banner {
     width: 520px;
@@ -63,6 +63,7 @@
 @media (max-width: 850px) and (min-width: 660px) {
   #HeroBanner .Hero {
     gap: 25px;
+
     .banner {
       width: 480px;
       height: auto;
@@ -114,7 +115,7 @@
   }
 }
 
-// Адаптация 450px 
+// Адаптация 450px
 @media (max-width: 450px) {
   #HeroBanner {
     padding: 20px;
