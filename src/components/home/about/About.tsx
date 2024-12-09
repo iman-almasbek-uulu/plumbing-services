@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { useTranslate } from "../../../utils/translate";
 import scss from "./About.module.scss";
 
@@ -9,7 +10,7 @@ const About = () => {
         <div className={scss.about}>
           <div className={scss.Block}>
             <div className={scss.aboutBlock}>
-              <h1>{t("О нас", "Биз жонундо", "About")}</h1>
+              <h1>{t("О нас", "Биз жонундо", "About Us")}</h1>
               <p>
                 {t(
                   `Решаем проблемы с сантехникой качественно, надежно и по доступным ценам. Работаем круглосуточно по вашему запросу.`,
@@ -17,9 +18,11 @@ const About = () => {
                   `We solve plumbing problems efficiently, reliably and at affordable prices. We work around the clock at your request.`
                 )}
               </p>
-              <button>
-                {t("Узнать больше", "көбүрөөк билүү", "find out more")}
-              </button>
+              <NavLink to={"/about"}>
+                <button>
+                  {t("Узнать больше", "көбүрөөк билүү", "find out more")}
+                </button>
+              </NavLink>
             </div>
             <div className={scss.miniBlocks}>
               <div className={scss.mini}>
@@ -69,7 +72,7 @@ const About = () => {
                 )}
               </p>
             </div>
-            <div className={scss.box}>
+            <div className={scss.box}>  
               <h1>
                 {t(
                   "Осмотрим и расчитаем цену",
@@ -96,7 +99,7 @@ const About = () => {
               <p>
                 {t(
                   `Быстро и качественно выполним все ремонтные работы. `,
-                  `We will carry out all repair work quickly and efficiently.`,
+                  `Бардык ремонт иштерин тез жана сапаттуу аткарабыз.`,
                   `We will carry out all repair work quickly and efficiently.`
                 )}
               </p>

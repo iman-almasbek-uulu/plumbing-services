@@ -1,4 +1,4 @@
-import scss  from './Masters.module.scss';
+import scss  from './Services.module.scss';
 
 interface CardProps {
   title: string;
